@@ -1,4 +1,5 @@
 import { CronJob } from 'cron';
+import fetch from 'node-fetch';
 
 const url = process.env.URL_APP || null;
 
@@ -10,4 +11,5 @@ if (url) {
     });
 
     cronJob.start();
+    console.log('✔ Heroku cron started');
 }
