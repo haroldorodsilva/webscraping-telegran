@@ -3,8 +3,9 @@ import 'express-async-errors';
 import 'dotenv/config';
 
 import routes from './routes';
-
 import Telegran from './bot/Telegran';
+
+import './services/heroku';
 
 const app = express();
 
